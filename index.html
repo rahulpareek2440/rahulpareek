@@ -5,7 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+				/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+				*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -39,7 +54,6 @@
   </div>
 
 </div>
-  
 
 <div class="container">
 
@@ -90,14 +104,17 @@
 
         </div>
       </div>
-    
-	
+    <div class="map">
+				<iframe src="https://www.google.com/maps/embed/v1/place?q=119+Murray+Street,+Binghamton,+NY,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+		
 </div>  
- <div class="jumbotron-fluid bg-peach text-center">
-		©2015 All Rights Reserved by RahulPareek®.
+    <div class="jumbotron-fluid bg-peach text-center">
+		Copyrights ©2015.All Rights Reserved | RahulPareek®.
     </div>
-	
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 0;"></span> <span id="toTopHover" style="opacity: 0;"> </span></a>	
+ 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
   </body>
 </html>
