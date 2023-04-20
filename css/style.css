@@ -400,8 +400,26 @@ i.mail {
   width: 22%;
   margin: 0 auto 3em;
 }
+/*
 .co-ntact {
   margin: 0 0 2em;
+}
+*/
+.co-ntact {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+/*   z-index: 1; */
+  animation: bounce 1.5s infinite;
 }
 i.facebk {
   width: 34px;
@@ -501,6 +519,7 @@ i.insta:hover {
 }
 .form-submit input[type="submit"]:hover {
   background: #e05d6f;
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
 }
 .text {
   width: 50%;
